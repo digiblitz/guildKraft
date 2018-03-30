@@ -1,0 +1,623 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js no-pass-type ie6 oldie" id="unsupported" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js no-pass-type ie7 oldie" id="unsupported" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js no-pass-type ie8 oldie" id="unsupported" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js no-pass-type ie9" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+<title>Product pricing</title>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="css/style.css">
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+		$( document ).ready(function( $ ) {
+		$(".overlay").click(function() {
+		$(".overlay").fadeOut();
+		$(".popCont").fadeOut();
+	});
+		});
+
+	</script>
+
+	<script type="text/javascript">
+	
+		function showPop(cont){
+		$("#overlay").fadeIn(300);
+		$("#"+cont).fadeIn();
+		}
+	</script>
+
+	<style>
+		
+	.overlay{
+
+		width:100%;
+		
+		height:100%;
+		
+		background:#333;
+		
+		opacity:0.6;
+		
+		position:fixed;
+		
+		z-index:9999;
+		
+		left:0;
+		
+		top:0;
+		
+		}
+		
+		.popCont {
+		
+			background: hsl(0, 0%, 100%) none repeat scroll 0 0;
+			height: auto;
+			left: 15%;
+			overflow: auto;
+		    padding: 20px 0 0 30px;
+			position: fixed;
+			top: 35px;
+			width: 70%;
+			z-index: 999999;
+			bottom:0;
+		
+		
+		}
+		
+
+		.popCont1{left:5%}
+
+		.footer-section ul li span a{font-size:12px;}
+
+
+
+		.popCont h2 {
+		
+			color: #fff;
+			/*background: none repeat scroll 0 0 #FF9933;*/
+			margin: 0 0 0px 0;
+			padding: 10px 0 15px 0;
+			font-size:18px;
+			text-align:center;
+		
+		}
+
+		.popCont h4 {
+		
+			color: #fff;
+			
+			background: none repeat scroll 0 0 #df9626;
+			
+			margin: 0 0 0px 0;
+			
+			padding: 10px 0 10px 0;
+			
+		}
+
+		.popCont p{color:#333; font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:normal; padding:0px 10px;}
+		.popCont p span{ margin:0 0 0 10%; color:#01bf9d;}
+		.popCont ul li{list-style:circle; font-size:15px;}
+		.overlay,.popCont{
+			display:none;
+			}
+		
+	</style>
+</head>
+<body>
+<header id="header">
+   <%@ include file = "../../include/Header_temp.jsp" %>
+</header>
+
+<div id="overlay" class="overlay"></div>
+<section class="container">
+<h1 style="text-align:center;">PLANS BUILT FOR BASIC PACKAGE. START WITH 60 DAYS FREE</h1>
+<div class="pricing_table_wdg">
+		<ul class="active">
+			<li style="background:#01bf9d;">Basic</li>
+			<li>$99/<br><span style="font-size:12px;">per month</span></li>
+			<!--<li>Perfect for those getting started with our app.</li>-->
+			<li>Features</li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont');">Membership and subscription</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont1');">Functional and Process Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont2');">Business Intelligence</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont3');">Business Architecture Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont4');">Product Training and Support</a></li>
+			
+			<li><a style="width:30%; float:left; margin:10px;background:#01bf9d;" href="signUp.html?signUpProcess=pricingDetails" class="buy_now">Try</a>
+			<a style="width:30%; float:left; margin:10px;" href="signUp.html?signUpProcess=pricingDetails&getProductPrice=99" class="buy_now">Buy</a></li>
+			<!--<li><a href="" class="buy_now">Buy Now</a></li>-->
+		</ul>
+		
+		<ul>
+			<li style="background:#1fcf6d;">Silver</li>
+			<li>$299/<br><span style="font-size:12px;">per month</span></li>
+			<!--<li>Perfect for those getting started with our app.</li>-->
+			<li>Features</li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont5');">Membership and subscription</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont6');">Functional and Process Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont7');">Business Intelligence</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont8');">Business Architecture Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont9');">Product Training and Support</a></li>
+			<li><a style="width:30%; float:left; margin:10px;background:#1fcf6d;" href="" class="buy_now">Try</a>
+			<a style="width:30%; float:left; margin:10px;" href="" class="buy_now">Buy</a></li>
+		</ul>
+		
+		<ul>
+			<li style="background:#5babe6;">Gold</li>
+			<li>$1249/<br><span style="font-size:12px;">per month</span></li>
+			<!--<li>Perfect for those getting started with our app.</li>-->
+			<li>Features</li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont10');">Membership and subscription</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont11');">Functional and Process Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont12');">Business Intelligence</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont13');">Business Architecture Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont14');">Product Training and Support</a></li>
+			<li><a style="width:30%; float:left; margin:10px;background:#5babe6;" href="" class="buy_now">Try</a><a style="width:30%; float:left; margin:10px;" href="" class="buy_now">Buy</a></li>
+		</ul>
+		
+		<ul>
+			<li style="background:#9d57b9;">Platinum</li>
+			<li>$4999/<br><span style="font-size:12px;">per month</span></li>
+			<!--<li>Perfect for those getting started with our app.</li>-->
+			<li>Features</li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont15');">Membership and subscription</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont16');">Functional and Process Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont17');">Business Intelligence</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont18');">Business Architecture Management</a></li>
+			<li><a style="background:none; border:none; padding:0; margin:0;" href="javascript:void(0);" onClick="showPop('popCont19');">Product Training and Support</a></li>
+			<li><a style="width:30%; float:left; margin:10px; background:#9d57b9;" href="" class="buy_now">Try</a><a style="width:30%; float:left; margin:10px;" href="" class="buy_now">Buy</a></li>
+		</ul>
+		
+		<ul>
+			<li style="background:#334960;">Enterprise</li>
+			<li>-<br><span style="font-size:12px;">per month</span></li>
+			<li>Features</li>
+			
+		<!--	<li>$120</li>
+			<li>Perfect for those getting started with our app.</li>
+			<li>15 Projects</li>
+			<li>5GB Storage</li>
+			<li>Unlimited Users</li>
+			<li>No Time Tracking</li>
+			<li>Enchaned Security</li>
+			<li></li>-->
+			<li><a style="width:30%; float:left; margin:10px;background:#334960;" href="" class="buy_now">Try</a><a style="width:30%; float:left; margin:10px;" href="" class="buy_now">Buy</a></li>
+		</ul>
+		
+		<div class="popCont" id="popCont">
+			<div class="wid">
+				<h2 class="back">Users</h2>
+				<p>Organizer User<span>1</span></p>
+				<p>Member User<span>25</span></p>
+				<p>SubChapter User<span>1</span></p>
+				<p>Corporate User<span>1</span></p>
+				<p>Business Head User<span>1</span></p>
+			</div>
+			<div class="wid">
+				<h2 class="back">Events Management</h2>
+				<p>No of events<span>1</span></p>
+				<p>No of event entries<span>50</span></p>
+				
+			</div>
+			<div class="wid">
+				<h2 class="back">Training Management</h2>
+				<p>Interactive Assignment / Lab<span>1</span></p>
+				<p>Descriptive Assignment / Lab<span>5</span></p>
+				<p>No of Multiple Choice / Objective Tests<span>5</span></p>
+				<p>No of Elaborative / Descriptive Tests<span>1</span></p>
+				
+			</div>
+			<div class="wid">
+				<h2 class="back">Membership Management</h2>
+				<p>Included</p>
+			</div>
+			<div class="wid">
+				<h2 class="back">Subchapter</h2>
+				<p><span>-</span></p>
+			</div>
+			<div class="wid">
+				<h2 class="back">Web store</h2>
+				<p><span>Include</span></p>
+			</div>
+		</div>
+		<div class="popCont" id="popCont1">
+		<div class="wid1">
+			<h2 class="back1">ERP</h2>
+			<p>No. of Modules<span>2</span></p>
+			<p>No. of Forms<span>10</span></p>
+			<p>No. of Screens<span>40</span></p>
+        </div>
+		<div class="wid1">
+				<h2 class="back1">Business Services</h2>
+				<p>No. of Provider Services<span>2</span></p>
+				<p>No. of Consumer Services<span>6</span></p>
+				<p>No of Service LifeCycle Design Allowed<span>1</span></p>
+	    </div>
+		<div class="wid1">
+				<h2 class="back1">Process Automation</h2>
+				<p>No of Single Instance Process<span>2</span></p>
+				<p>No of Multi-Instance Process<span>1</span></p>
+				<p>No of Process LifeCycle Design Allowed<span>1</span></p>
+		</div>
+		</div>
+		<div class="popCont" id="popCont2">
+		<div class="wid1">
+			<h2 class="back1">Business intelligence & Analytics</h2>
+			<p>No of Business Intelligence & Analytics Modeler Session<span>-</span></p>
+			<p>No of Business Intelligence & Analytics Consumer Session<span>1</span></p>
+		</div>	
+		</div>
+		<div class="popCont" id="popCont3">
+		<div class="wid1">
+			<h2 class="back1">Asset/ Artifacts management & Governance</h2>
+			<p>No of un-governed Assets/Artifacts<span>100</span></p>
+			<p>No of Governed Assets/Artifacts<span>-</span></p>
+		</div>	
+		<div class="wid1">
+			<h2 class="back1">Business Architecture Modeling Bundle</h2>
+			<p>No of BA LifeCycle Design Allowed<span>-</span></p>
+			<p>No of Business Mapping Allowed<span>-</span></p>
+			<p>No. of Business of Process Units aligned<span>-</span></p>
+			<p>No. of Business Reference Architecture<span>-</span></p>
+			<p>No of Blue Prints<span>-</span></p>
+		</div>	
+		<div class="wid1">
+			<h2 class="back1">Enterprise Architecture Planning Bundle</h2>
+			<p>No of EA frameworks<span>-</span></p>
+			<p>No of EA LifeCycle Design Allowed<span>-</span></p>
+			<p>No. of Technical Reference Architecture<span>-</span></p>
+			<p>No of Business Processes  Alignment<span>-</span></p>
+			<p>No of  Business Services Alignment<span>-</span></p>
+			<p>No of  Web/technical Services Alignment<span>-</span></p>
+			<p>No of  Application component Alignment<span>-</span></p>
+		</div>
+		</div>
+		<div class="popCont" id="popCont4">
+		<div class="wid1">
+			<h2 class="back1">Remote Technical Support & Training</h2>
+			<p>Technical Support - Forum, FAQ & Email<span>FREE 24/7</span></p>
+			<p>Remote Training & Technical Support - Telephone, Chat, Remote Login & WebEx<span>-</span></p>
+			<p>Training & Technical Support - Onsite<span>-</span></p>
+			
+		</div>	
+		<div class="wid1">
+			<h2 class="back1">Business Engineering Technology Support</h2>
+			<p>Online Support - Forum, FAQ & Email<span>FREE 24/7</span></p>
+			<p>Remote BET Support - Telephone, Chat, Remote Login & WebEx<span>-</span></p>
+			<p>BET Support - Onsite<span>-</span></p>
+			
+		</div>
+
+		<div class="wid1">
+			<h2 class="back1">Application Integration(API)</h2>
+			<p><span>-</span></p>
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Database Integration</h2>
+			<p><span>-</span></p>
+		</div>	
+		</div>
+		
+		
+		<div class="popCont" id="popCont5">
+		<div class="wid1">
+			<h2 class="back1">Users</h2>
+			<p>Organizer User<span>1</span></p>
+			<p>Member User<span>25</span></p>
+			<p>SubChapter User<span>1</span></p>
+			<p>Corporate User<span>1</span></p>
+			<p>Business Head User<span>1</span></p>
+			
+		</div>		
+		<div class="wid1">
+			<h2 class="back1">Events Management</h2>
+			<p>No of events<span>1</span></p>
+			<p>No of event entries<span>50</span></p>
+			
+		</div>	
+		<div class="wid1">
+			<h2 class="back1">Training Management</h2>
+			<p>Interactive Assignment / Lab<span>1</span></p>
+			<p>Descriptive Assignment / Lab<span>5</span></p>
+			<p>No of Multiple Choice / Objective Tests<span>5</span></p>
+			<p>No of Elaborative / Descriptive Tests<span>1</span></p>
+
+
+			
+		</div>	
+		<div class="wid1">
+				<h2 class="back1">Membership Management</h2>
+				<p><span>Included</span></p>
+			</div>
+			<div class="wid1">
+				<h2 class="back1">Subchapter</h2>
+				<p><span>One respective subchapter bundle included</span></p>
+			</div>
+			<div class="wid1">
+				<h2 class="back">Web store</h2>
+				<p><span>Include</span></p>
+			</div>	
+			<div class="wid1">
+				<h2 class="back1">Storage</h2>
+				<p><span>One Storage Bundle Included</span></p>
+			</div>	
+		</div>
+		<div class="popCont" id="popCont6">
+		<div class="wid1">
+			<h2 class="back1">ERP</h2>
+			<p>No. of Modules<span>2</span></p>
+			<p>No. of Forms<span>10</span></p>
+			<p>No. of Screens<span>40</span></p>
+			
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Business Services</h2>
+			<p>No. of Provider Services<span>30</span></p>
+			<p>No. of Consumer Services<span>100</span></p>
+			<p>No of Service LifeCycle Design Allowed<span>2</span></p>
+			
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Process Automation</h2>
+			<p>No of Single Instance Process<span>15</span></p>
+			<p>No of Multi-Instance Process<span>5</span></p>
+			<p>No of Process LifeCycle Design Allowed<span>2</span></p>
+			
+		</div>	
+		
+		
+		</div>
+		
+		
+		<div class="popCont" id="popCont7">
+			
+		<div class="wid1">
+			<h2 class="back1">Business intelligence & Analytics</h2>
+			<p>No of Business Intelligence & Analytics Modeler Session<span>1</span></p>
+			<p>No of Business Intelligence & Analytics Consumer Session<span>5</span></p>
+		</div>	
+		
+		</div>
+		
+		<div class="popCont" id="popCont8">
+				
+		<div class="wid1">
+			<h2 class="back1">Asset/ Artifacts management & Governance</h2>
+			<p>No of un-governed Assets/Artifacts<span>500</span></p>
+			<p>No of Governed Assets/Artifacts<span>50</span></p>
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Business Architecture Modeling Bundle</h2>
+			<p>No of BA LifeCycle Design Allowed<span>1</span></p>
+			<p>No of Business Mapping Allowed<span>4</span></p>
+			<p>No. of Business of Process Units aligned<span>1</span></p>
+			<p>No. of Business Reference Architecture<span>1</span></p>
+			<p>No of Blue Prints<span>1</span></p>
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Enterprise Architecture Planning Bundle</h2>
+			<p>No of EA frameworks<span>1</span></p>
+			<p>No of EA LifeCycle Design Allowed<span>1</span></p>
+			<p>No. of Technical Reference Architecture<span>1</span></p>
+			<p>No of Business Processes  Alignment<span>1</span></p>
+			<p>No of  Business Services Alignment<span>5</span></p>
+			<p>No of  Web/technical Services Alignment<span>20</span></p>
+			<p>No of  Application component Alignment<span>100</span></p>
+		</div>	
+		
+		</div>
+		
+		<div class="popCont" id="popCont9">
+		
+		<div class="wid1">
+			<h2 class="back1">Remote Technical Support & Training</h2>
+			<p>Technical Support - Forum, FAQ & Email<span>FREE 24/7</span></p>
+			<p>Remote Training & Technical Support - Telephone, Chat, Remote Login & WebEx<span>One Remote Training & Support Bundle Included</span></p>
+			<p>Training & Technical Support - Onsite<span>Call For Pricing</span></p>
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Business Engineering Technology Support</h2>
+			<p>Online Support - Forum, FAQ & Email<span>FREE 24/7</span></p>
+			<p>Remote BET Support - Telephone, Chat, Remote Login & WebEx<span>-</span></p>
+			<p>BET Support - Onsite<span>Call For Pricing</span></p>
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Application Integration(API)</h2>
+			<p><span>Call For Pricing</span></p>
+		</div>	
+		
+		<div class="wid1">
+			<h2 class="back1">Database Integration</h2>
+			<p><span>Call For Pricing</span></p>
+		</div>	
+		
+		</div>
+		
+		
+		
+		<div class="popCont" id="popCont10">
+			
+		<div class="wid2">
+			<h2 class="back2">Users</h2>
+			<p>Organizer User<span>3</span></p>
+			<p>Member User<span>75</span></p>
+			<p>SubChapter User<span>3</span></p>
+			<p>Corporate User<span>3</span></p>
+			<p>Business Head User<span>3</span></p>
+			
+		</div>		
+		<div class="wid2">
+			<h2 class="back2">Events Management</h2>
+			<p>No of events<span>5</span></p>
+			<p>No of event entries<span>250</span></p>
+			
+		</div>	
+		<div class="wid2">
+			<h2 class="back2">Training Management</h2>
+			<p>Interactive Assignment / Lab<span>5</span></p>
+			<p>Descriptive Assignment / Lab<span>25</span></p>
+			<p>No of Multiple Choice / Objective Tests<span>25</span></p>
+			<p>No of Elaborative / Descriptive Tests<span>5</span></p>
+
+
+			
+		</div>	
+		<div class="wid2">
+				<h2 class="back2">Membership Management</h2>
+				<p><span>Included</span></p>
+			</div>
+			<div class="wid2">
+				<h2 class="back2">Subchapter</h2>
+				<p><span>Two respective subchapter bundle included</span></p>
+			</div>
+			<div class="wid2">
+				<h2 class="back2">Web store</h2>
+				<p><span>Included</span></p>
+			</div>
+			
+			<div class="wid2">
+				<h2 class="back2">Storage</h2>
+				<p><span>Five Storage Bundle Included</span></p>
+			</div>
+		
+		</div>
+		<div class="popCont" id="popCont11">
+		<div class="wid2">
+			<h2 class="back2">ERP</h2>
+			<p>No. of Modules<span>5</span></p>
+			<p>No. of Forms<span>50</span></p>
+			<p>No. of Screens<span>200</span></p>
+			
+		</div>	
+		
+		<div class="wid2">
+			<h2 class="back2">Business Services</h2>
+			<p>No. of Provider Services<span>2</span></p>
+			<p>No. of Consumer Services<span>6</span></p>
+			<p>No of Service LifeCycle Design Allowed<span>1</span></p>
+			
+		</div>	
+		
+		<div class="wid2">
+			<h2 class="back2">Process Automation</h2>
+			<p>No of Single Instance Process<span>2</span></p>
+			<p>No of Multi-Instance Process<span>1</span></p>
+			<p>No of Process LifeCycle Design Allowed<span>1</span></p>
+			
+		</div>	
+		</div>
+		
+		<div class="popCont" id="popCont12">
+					
+		<div class="wid2">
+			<h2 class="back2">Business intelligence & Analytics</h2>
+			<p>No of Business Intelligence & Analytics Modeler Session<span>1</span></p>
+			<p>No of Business Intelligence & Analytics Consumer Session<span>5</span></p>
+		</div>	
+		
+		</div>
+		
+		<div class="popCont" id="popCont13">
+		<div class="wid2">
+			<h2 class="back2">Asset/ Artifacts management & Governance</h2>
+			<p>No of un-governed Assets/Artifacts<span>500</span></p>
+			<p>No of Governed Assets/Artifacts<span>50</span></p>
+		</div>	
+		
+		<div class="wid2">
+			<h2 class="back2">Business Architecture Modeling Bundle</h2>
+			<p>No of BA LifeCycle Design Allowed<span>5</span></p>
+			<p>No of Business Mapping Allowed<span>20</span></p>
+			<p>No. of Business of Process Units aligned<span>5</span></p>
+			<p>No. of Business Reference Architecture<span>3</span></p>
+			<p>No of Blue Prints<span>5</span></p>
+		</div>	
+		
+		<div class="wid2">
+			<h2 class="back2">Enterprise Architecture Planning Bundle</h2>
+			<p>No of EA frameworks<span>2</span></p>
+			<p>No of EA LifeCycle Design Allowed<span>5</span></p>
+			<p>No. of Technical Reference Architecture<span>5</span></p>
+			<p>No of Business Processes  Alignment<span>5</span></p>
+			<p>No of  Business Services Alignment<span>25</span></p>
+			<p>No of  Web/technical Services Alignment<span>100</span></p>
+			<p>No of  Application component Alignment<span>500</span></p>
+		</div>	
+		</div>
+		<div class="popCont" id="popCont14">
+		<div class="wid2">
+			<h2 class="back2">Remote Technical Support & Training</h2>
+			<p>Technical Support - Forum, FAQ & Email<span>FREE 24/7</span></p>
+			<p>Remote Training & Technical Support - Telephone, Chat, Remote Login & WebEx<span>Three Remote Training & Support Bundle Included</span></p>
+			<p>Training & Technical Support - Onsite<span>Call For Pricing</span></p>
+		</div>	
+		
+		<div class="wid2">
+			<h2 class="back2">Business Engineering Technology Support</h2>
+			<p>Online Support - Forum, FAQ & Email<span>FREE 24/7</span></p>
+			<p>Remote BET Support - Telephone, Chat, Remote Login & WebEx<span>-</span></p>
+			<p>BET Support - Onsite<span>Call For Pricing</span></p>
+		</div>	
+		
+		<div class="wid2">
+			<h2 class="back2">Application Integration(API)</h2>
+			<p><span>Call For Pricing</span></p>
+		</div>	
+		
+		<div class="wid2">
+			<h2 class="back2">Database Integration</h2>
+			<p><span>Call For Pricing</span></p>
+		</div>	
+		</div>
+		<div class="popCont" id="popCont15">
+			<h2>Users</h2>
+		</div>
+		<div class="popCont" id="popCont16">
+			<h2>Users</h2>
+		</div>
+		<div class="popCont" id="popCont17">
+			<h2>Users</h2>
+		</div>
+		<div class="popCont" id="popCont18">
+			<h2>Users</h2>
+		</div>
+		
+	
+</div>
+		
+		
+	
+		
+		
+<br style="clear:both;" />
+<br/>
+<br/>
+
+</section>
+
+
+ <div id="footer">			 
+			
+                    <!-- FOOTER STARTS HERE -->
+                        
+						<%@ include file = "../../include/FooterProcess.jsp" %>
+                    <!-- FOOTER ENDS HERE -->
+               
+ </div>
+
+</body>
+
+   
+
+
+</html>

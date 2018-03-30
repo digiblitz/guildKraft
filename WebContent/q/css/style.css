@@ -1,0 +1,118 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+body {
+	background:#2d2f37;
+	margin:0px;
+	margin-top:150px;
+}
+.clear {clear:both;}
+
+ul li{ list-style-type:none;}
+/*Klaus Structure*/
+
+.klausbg {
+	background:#fff;
+	height:570px;
+	text-align:center;
+	font-family: 'Titillium Web', sans-serif;
+	cursor:default;
+	padding:0;
+	margin-bottom:30px;
+	border-right:1px solid #f0f0f0;
+}
+
+.klausheader {height:300px;border-bottom:1px solid #f0f0f0;}
+.klausbg h5 {color:#2d2f37;font-size:21px;font-weight:300;text-transform:uppercase;float:left;width:100%;margin:0;padding-top:40px;}
+.klausbg p {color:#9fa5ae;font-size:16px;font-weight:500;float:left;width:100%;margin-top:-10px; font-family: 'Open Sans', sans-serif;}
+.klaus_package {color:#2d2f37;font-size:16px;font-weight:300;text-transform:uppercase;float:left;width:100%; font-family: 'Open Sans', sans-serif;}
+.klaus_price {font-size:23px;font-weight:300;float:left;width:100%;}
+.klaus_featured {
+	width:130px;
+	height:25px;
+	position:absolute;
+	top:0;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background:#ccc;
+	border-radius:0px 0px 5px 5px;
+	font-size:15px;
+	padding-top:1px;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:0.8px;
+}
+
+.klaus_features {
+	border-bottom:1px solid #f0f0f0;
+}
+
+.klaus_features li {
+	height:40px;
+	list-style:none;
+	text-align:left;
+	font-size:14px;
+	color:#54565b;
+	font-weight:400;
+	padding-top:10px;
+	padding-left:10px;
+}
+
+.klaus_features a {
+    height: 40px;
+    list-style: none;
+    text-align: left;
+    font-size: 14px;
+    color: #54565b;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+
+.klaus_features li i {
+	padding-right:10px;
+	font-size:16px;
+}
+
+.klaus_features a i {
+	padding-right:10px;
+	font-size:16px;
+	
+}
+
+.klaus_plancolor {background:#f4f4f4;}
+.klaus_getaquote {width:180px;height:36px;margin-left:auto;margin-right:auto;}
+.klaus_getaquote li {list-style:none;height:36px;margin-top:28px;}
+.klaus_getaquote li a {color:#fff;float:left;width:100%;height:36px;padding-top:8px;border-radius:5px;-webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition: all 0.3s ease;}
+.klaus_getaquote li a:hover{text-decoration:none;}
+
+
+/*Skin v2*/
+
+.skintwocolor {color:#e23c3c;}
+.skintwobg {background:#e23c3c;}
+.skintwoklaus_features i {color:#e23c3c;}
+.skintwogetquote li a {background:#e23c3c;}
+.skintwogetquote li a:hover{background:#f74848;}
+.skintwoultimate {background:#fff;border:0;color:#fff;}
+.skintwoucolor {border-bottom:1px solid #fff;}
+.skintwoucolor h5 {color:#fff;}
+.skintwoucolor span {color:#fff;}
+.skintwoucolor p {color:#fff;}
+.skintwoucolor li {color:#fff;}
+.skintwoucolor i {color:#fff;}
+.skintwoklaus_plancolor {background:#d03030;}
+.skintwoucolorget li a {background:#fff;color:#e23c3c;}
+.skintwoucolorget li a:hover {background:#ff5c5c;color:#fff;}

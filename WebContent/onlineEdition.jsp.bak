@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/camera.css"/>
+    <link rel="stylesheet" href="css/style.css">
+	 <script src="js/cscombo_new.js" type="text/javascript" ></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+    <script src="js/sForm.js"></script>
+    <script src="js/camera.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+    <script>
+        $(function () {
+            $(".equal").matchHeight();
+        });
+    </script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+	
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+	
+	<style type="text/css">
+/** resets **/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { height: 101%; }
+a.anchorStyle{ 
+	font-size:small;
+	
+}
+body { 
+  background: #f0f0f0 url('images/bg.gif'); 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #313131;
+  font-size: 62.5%; 
+  line-height: 1; 
+}
+
+::selection { background: #a4dcec; }
+::-moz-selection { background: #a4dcec; }
+::-webkit-selection { background: #a4dcec; }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #ccc;
+  font-style: italic;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #ccc;
+  font-style: italic;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ccc;
+  font-style: italic;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #ccc !important;
+  font-style: italic;  
+}
+
+br { display: block; line-height: 2.2em; } 
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+input, textarea { 
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+
+}
+input.button-add {
+    background-image: url(images/bg1.jpg); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 20px;           /* make this the size of your image */
+    vertical-align: top; /* align the text vertically centered */
+	font-weight:600;
+		
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+#topbar {
+  background: #4f4a41;
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+#topbar a {
+  color: #fff;
+  font-size:1.3em;
+  line-height: 1.25em;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+#topbar a:hover {
+  opacity: 1;
+}
+
+/** typography **/
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+  padding: .1em 0;
+  color: #444;
+	position: relative;
+	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
+}
+h1:before,
+h1:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  vertical-align: middle;
+  background: #f0f0f0;
+}
+h1:before {    
+  left: -.5em;
+  margin: 0 0 0 -50%;
+}
+h1:after {    
+  left: .5em;
+  margin: 0 -50% 0 0;
+}
+h1 > span {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+p {
+  display: block;
+  font-size: 1.35em;
+  line-height: 1.5em;
+  margin-bottom: 22px;
+}
+
+.center { display: block; text-align: center; }
+
+
+/** page structure **/
+#w {
+  display: block;
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#content {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 25px 20px;
+  padding-bottom: 35px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+
+.flatbtn {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  color: #f3faef;
+  text-decoration: none;
+  background-color: #6bb642;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 22px 12px 22px;
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 rgba(15, 15, 15, 0.3);
+  -moz-box-shadow: 0 1px 0 rgba(15, 15, 15, 0.3);
+  box-shadow: 0 1px 0 rgba(15, 15, 15, 0.3);
+}
+.flatbtn:hover {
+  color: #fff;
+  background-color: #73c437;
+}
+.flatbtn:active {
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/** custom login button **/
+.flatbtn-blu { 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  color: #edf4f9;
+  text-decoration: none;
+  background-color: #4f94cf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 12px 26px 12px 26px;
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.flatbtn-blu:hover {
+  color: #fff;
+  background-color: #519dde;
+}
+.flatbtn-blu:active {
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow:inset 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/** modal window styles **/
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+
+#loginmodal {
+  width: 300px;
+  padding: 15px 20px;
+ background-color:#fffff5;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#loginform { /* no default styles */ }
+
+#loginform label { display: block; font-size: 1.5em; font-weight: 400; color: #000000; margin-bottom: 3px; }
+
+
+.txtfield { 
+  display: block;
+  width: 100%;
+  padding: 6px 5px;
+  margin-bottom: 15px;
+  font-family: 'Helvetica Neue', Helvetica, Verdana, sans-serif;
+  color: #7988a3;
+  font-size: 1.4em;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#edf3f9), to(#fff));
+  background-image: -webkit-linear-gradient(top, #edf3f9, #fff);
+  background-image: -moz-linear-gradient(top, #edf3f9, #fff);
+  background-image: -ms-linear-gradient(top, #edf3f9, #fff);
+  background-image: -o-linear-gradient(top, #edf3f9, #fff);
+  background-image: linear-gradient(top, #edf3f9, #fff);
+  border: 1px solid;
+  border-color: #abbce8 #c3cae0 #b9c8ef;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.4);
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.txtfield:focus {
+  outline: none;
+  color: #525864;
+  border-color: #84c0ee;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 7px #96c7ec;
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 7px #96c7ec;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 0 7px #96c7ec;
+}
+
+
+</style>
+ <%
+	   
+  String sessLogId = (String) session.getAttribute("sessionId");
+  String chkLogout = (String) request.getAttribute("logout");
+    
+
+ 
+
+  
+  System.out.println("chkLogout==="+chkLogout);
+  
+  if(sessLogId!=null){
+   session.removeAttribute("sessionId");
+            session.removeAttribute("userId");
+            session.removeAttribute("userCode");
+            session.removeAttribute("firstName");
+            session.removeAttribute("userTypeName");
+            session.removeAttribute("emailId");
+            session.removeAttribute("memberId");
+   response.setHeader("Cache-Control", "no-cache");
+  response.sendRedirect("login.jsp"); 
+  }
+  
+  
+  %>
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <div class="put-left logo-caption">
+                    <h1>
+                        <a href="#"><img src="images/digi_Logo_guildkraft.png" alt="" width="150px" height="30px">      </a>             </h1>
+
+                    <div class="second-word"><p>Business Process Automation and tranformation </p></div>
+                </div>
+
+
+                <div class="put-right caption">
+                    <p class="color_4">Need a helping hand? Call our office search <br/>
+                        helpline for advice -
+                        <span class="color_2">0800 368 0380</span>                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+
+                    <div class="put-right social-list">
+                        <ul>
+                            <li class="color_1">
+                                <a class="fa fa-facebook" href="#"></a>
+                            </li>
+                            <li class="color_1">
+                                <a class="fa fa-google-plus" href="#"></a>
+                            </li>
+                            <li class="color_1">
+                                <a class="fa fa-rss" href="#"></a>
+                            </li>
+                            <li class="color_1">
+                                <a class="fa fa-pinterest" href="#"></a>
+                            </li>
+                            <li class="last color_1">
+                                <a class="fa fa-linkedin" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="border-wrapper">
+                        <nav class="put-left header-menu">
+                            <ul class="sf-menu">
+                                <li class="current">
+                                    <a href="index.jsp">Home</a>                                </li>
+                                <li>
+                                    <a class="second" href="index-1.jsp">About</a>
+                                    <ul>
+                                        <li>
+                                            <a href="#">History</a>                                        </li>
+                                        <li>
+                                            <a href="#">News</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Latest</a>                                                </li>
+                                                <li>
+                                                    <a href="#">Archive</a>                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Testimonials</a>                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index-2.jsp">Press Room</a>                                </li>
+                                <li>
+                                    <a href="index-3.jsp">Visitors</a>                                </li>
+                                <li>
+                                    <a href="index-4.jsp">Events</a>                                </li>
+                                <li>
+                                    <a href="index-5.jsp">Contacts</a>                                </li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#"></a></li>
+								<li><a href="#loginmodal" id="modaltrigger">SignIn</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="loginmodal" style="display:none;" class="bg1" >
+  <label style="size:25px"><h1>User Login</h1></label>
+      <form id="loginform" name="loginform" method="post" action="login.html?cmd=initDash">
+	 	  
+    <div align="left" style="size:25px"><label>Username:</label>
+	
+	  <%
+			String status = (String) request.getAttribute("status");
+            if (status != null) {
+                if (status.equals("fail")) {%>
+				
+	<div class="styleError">Invalid Login! Try logging in again.</div>
+	<%} else if (status.equals("expired")) {%>
+	<div class="styleError">License Expired.</div>
+	 <% } else if (status.equals("conFailed")) {%>
+	 <div class="styleError">Connection Problem ! Please Login Again.</div>
+	 <% } else if (status.equals("users")) {%>
+	 <div class="styleError">Licensed Users Exceeded.</div>
+	 <% } } %>
+	 
+	</div>
+      <input type="text" name="textfield" id="textfield" class="txtfield" tabindex="1" onBlur="usrStat();">
+      
+        <div align="left"  style="size:25px"><label>Password:</label></div>
+      <input type="password" name="textfield2" id="textfield2" class="txtfield" tabindex="2">
+      
+      <div class="center">
+	  <label><img src="images/register_button.jpg" alt="" width="20px" height="20px" style="cursor:pointer"/>
+	  <input type="submit" name="Submit" id="loginbtn"  value="Sign In" tabindex="3" class="button-add"></label>
+	  </div>
+	
+	  
+	  <div align="center" style="margin-top:10px">
+	  <a href="user.html?cmd=initUsr" style="color:#0000FF" class="anchorStyle">New user signup</a> &emsp;&emsp;&emsp;
+	  <a href="user.html?cmd=view" style="color:#0000FF" class="anchorStyle">Forget password?</a>
+	  </div> 
+
+    </form>
+  </div>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+
+    <div class="bg-content_2">
+        <div class="border-bottom border-bottom_2">
+            <div class="container">
+                <div class="wrapper13">
+                    <div class="row">
+                      <div class="grid_6" align="center">
+                            <h3 class="heading_8 color_3 text_4">Registration form</h3>
+
+                            <div class="form-wrapper">
+                                <table width="1000" >
+<%String user_id=(String)request.getAttribute("user_id"); %>
+ <%String usrStat=(String)request.getAttribute("usrStat"); %>          
+ <form id="form" name="insert" align="center" action="login.html?cmd=signup" method="post" >
+ 
+  <%
+	String status1=(String)request.getAttribute("status");
+	 if(status1!=null){
+	 %>
+	   <tr>
+        <td width="84" style="height:30; " align="center"><strong><font color="#FF0000"><%=status1%></font></strong></td>
+      </tr>
+	 
+	 <%
+	}
+	
+	%>
+
+
+<tr><td align="center">
+<table border="0" align="" width="559"  style="margin-left:100px; margin-top:10px; margin-bottom:10px">
+<tr><td colspan="2"><p class="text_9 color_2">* All fields are mandatory.</p></td>
+</tr>
+
+<tr ><td   height="40" width="246"><h5 class="text_11 color_3">First Name:</h5></td>
+<td width="265">
+  <input  type="text" name="firstname" id="firstname"   style="width:250px; height:20px;" value=""  >
+
+ </td>
+ <td width=34 ><p class="text_9 color_2">*</p></td>
+</tr>
+<tr><td   height="40" width="246"><h5 class="text_11 color_3">Last Name:</h5></td>
+<td>
+  <input  type="text" name="lastname" id="lastname" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+</tr>
+<tr>
+ <td   height="40" width="246"><h5 class="text_11 color_3">Email:</h5></td>
+    <td>
+  <input  type="text" name="email" id="email" style="width:250px; height:20px;"  value="" onChange="ValidateEmail('email');">
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+   </tr>
+
+   <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">Mobile No :</h5></td>
+    <td>
+  <input  type="text" name="mobileno" id="mobileno" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+  
+   <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">Institution Name:</h5></td>
+    <td>
+  <input  type="text" name="companyname" id="companyname" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+  <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">Country:</h5></td>
+    <td>
+  <select name="country" id="country" onChange="FillState(document.insert.country, document.insert.state, '');" style="width:250px">
+  
+  <option selected="selected"><h5 class="text_11 color_3">Select One</h5></option>
+                    <option value="United States of America">United States of America</option></select>
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+   <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">State:</h5></td>
+    <td>
+	<select name="state" id="state" style="width:250px">
+ <option value="">Select State</option>
+<option value="TamilNadu">TamilNadu</option>
+<option value="Kerala">Kerala</option>
+<option value="Delhi">Delhi</option></select>
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+ 
+   <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">City:</h5></td>
+    <td>
+  <input  type="text" name="city" id="city" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+  <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">Card Type:</h5></td>
+    <td>
+	<select name="state" id="state" style="width:250px">
+ <option value="">Select State</option>
+<option value="TamilNadu">TamilNadu</option>
+<option value="Kerala">Kerala</option>
+<option value="Delhi">Delhi</option></select>
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+  <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">Credit Card No:</h5></td>
+    <td>
+  <input  type="text" name="city" id="city" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+  
+  <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">CVV no:</h5></td>
+    <td>
+  <input  type="text" name="city" id="city" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+  <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">Name on Card:</h5></td>
+    <td>
+  <input  type="text" name="city" id="city" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+ 
+  <tr>
+    <td   height="40" width="246"><h5 class="text_11 color_3">Expiry Date:</h5></td>
+    <td>
+  <input  type="text" name="city" id="city" style="width:250px; height:20px;"  value="" >
+
+  </td>
+  <td width=34 style="color:red" ><p class="text_9 color_2">*</p></td>
+  </tr>
+  
+  <tr><td colspan="3"><h5 class="text_11 color_3">Declaration:</h5></td></tr>
+  <tr><td colspan="3"><input type="checkbox" name="agree" /><p>I Hereby Declare that all the Statements made by me in the Application from and Information sheet are true and complete to the best of my knowledge.</p></td></tr>
+  
+  
+  
+<tr  align="center"><td colspan="2">
+ <div class="contact-box">
+ <%String chooseButton = "try";
+ 	if(chooseButton.equalsIgnoreCase("pay") && chooseButton != null)
+		{%>
+ 	<a class="btn color_3 text_3" href="">
+		<input type="submit" name="Insert" value="Register" id="submit" onClick="return(onValidate());" style="background-color: transparent;border:none;cursor:pointer;">
+	</a>
+	<%} else {%>
+	<a class="btn color_3 text_3" href="">
+		<input type="submit" name="Insert" value="Proceed" id="submit" onClick="return(onValidate());" style="background-color: transparent;border:none;cursor:pointer;">
+	</a>
+	<%}%>
+	<a class="btn color_3 text_3" href="">
+		<input name="button" type="button" class="gradBtn" style=" background-color: transparent; border:none; cursor:pointer;"  onClick="javascript:history.back(-1);" value="Cancel" >
+	</a>
+</div>
+
+</td></tr>
+</table></td></tr>
+</form>
+						
+
+</table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="grid_12">
+                    <h1 class="text_4 color_1">
+                        <a href="index.jsp">guildKraft</a>
+                    </h1>
+                    <p class="copyright color_9 text_2">
+                        <span>&copy;
+                            <span id="copyright-year"></span></span>
+                        <a href="index-6.jsp">Privacy policy</a>
+                        More <a rel="nofollow" href="http://www.digiblitz.com/" target="_blank">digiBlitz Technologies Pvt Ltd.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+<script type="text/javascript">
+//-------------------------------- User status validation Ajax Script ------------------------------------------------
+
+var httpRequest;
+
+function usrStat()
+{
+
+if(document.loginform.textfield.value!="" && document.loginform.textfield.value.indexOf(' ')!=0)
+	{
+
+   var chsUserName=document.loginform.textfield.value;
+
+   /** 
+    * This method is called when the author is selected 
+    * It creates XMLHttpRequest object to communicate with the  
+    * servlet  
+    */ 
+        url= "UsrSignupAjax.html?cmd=checkusrnam&chsUserName="+chsUserName; 
+
+        if (window.ActiveXObject) 
+        { 
+            httpRequest = new ActiveXObject("Microsoft.XMLHTTP"); 
+        } 
+        else if (window.XMLHttpRequest) 
+        { 
+            httpRequest = new XMLHttpRequest(); 
+        } 
+     
+        httpRequest.open("GET", url, true); 
+        
+        httpRequest.onreadystatechange =processUser; 
+        httpRequest.send(null); 
+   } 
+   }
+   
+   
+   
+    /** 
+    * This is the call back method 
+    * If the call is completed when the readyState is 4 
+    * and if the HTTP is successfull when the status is 200 
+    * update the profileSection DIV 
+    */ 
+    function processUser() 
+    { 
+   
+        if (httpRequest.readyState == 4) 
+        { 
+            if(httpRequest.status == 200) 
+            { 
+                //get the XML send by the servlet 
+                 var salutationXML = httpRequest.responseXML.getElementsByTagName("userstatus")[0]; 
+                 var salutationText = salutationXML.childNodes[0].nodeValue; 
+     
+                //Update the HTML 
+                updateHTML(salutationXML); 
+            } 
+            else 
+            { 
+                alert("Error loading page\n"+ httpRequest.status +":"+ httpRequest.statusText); 
+            } 
+        } 
+    } 
+        
+   /** 
+    * This function parses the XML and updates the  
+    * HTML DOM by creating a new text node is not present 
+    * or replacing the existing text node. 
+    */ 
+    function updateHTML(salutationXML) 
+    { 
+        //The node valuse will give actual data 
+        var salutationText = salutationXML.childNodes[0].nodeValue; 
+
+		if(salutationText == "false")
+		{
+			alert("User Name doesn't Exists!");
+			document.loginform.textfield.value="";
+			document.loginform.textfield.focus();
+		}
+		      
+    } 
+   </script>
+   <script type="text/javascript">
+$(function(){
+  $('#loginform').submit(function(e){
+    return true;
+  });
+  
+  $('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
+});
+</script>
+
+<script  type="text/javascript">
+
+function Dospace(str){
+	if(str.indexOf("  ")!=-1)
+	{return true;}
+	else {return false;}
+	}
+	
+function ValidateEmail(inputText)  
+{  
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+if(inputText.value.match(mailformat))  
+{  
+document.insert.email.focus();  
+return true;  
+}  
+else  
+{  
+alert("You have entered an invalid email address!");  
+document.insert.email.focus();  
+return false;  
+}  
+}  
+
+
+
+
+function onValidate()
+{
+
+	
+	if(document.insert.password.value==""){
+		alert("Password cannot be empty");
+		document.insert.password.focus();
+		
+		return false;
+	}
+	
+	
+	
+	if(document.insert.password.value.length<6)
+
+	{alert("The password you have verified seems to be incorrect. Please correct it");
+	document.insert.password.focus();
+	 return false;}
+	if(document.insert.password.value.length>15)
+	{alert("The password you have verified seems to be incorrect. Please correct it");
+	document.insert.password.focus();
+	 return false;}
+	
+	
+	if(Dospace(document.insert.password.value)||((document.insert.password.value.indexOf(' '))==0))
+	   { alert("The password you have verified seems to be incorrect. Please correct it");
+	   document.insert.password.focus();
+	   return false; }
+	
+	if(document.insert.firstname.value==""){
+		alert("Firstname cannot be empty");
+		document.insert.firstname.focus();
+		return false;
+	}
+	if(Dospace(document.insert.firstname.value)||((document.insert.firstname.value.indexOf(' '))==0))
+	   { alert("Enter valid firstname");
+	   document.insert.firstname.focus();
+	   return false; }
+	
+	if(document.insert.lastname.value==""){
+		alert("Lastname cannot be empty");
+		document.insert.lastname.focus();
+		return false;
+	}
+	if(Dospace(document.insert.lastname.value)||((document.insert.lastname.value.indexOf(' '))==0))
+	   { alert("Enter valid lastname");
+	   document.insert.lastname.focus();
+	   return false; }
+	   
+	
+	if(document.insert.email.value==""){
+		alert("Email id cannot be empty");
+		document.insert.email.focus();
+		return false;
+	}
+	
+	
+	if(document.insert.agree.value==""){
+		alert("You should agree the Declaration");
+		document.insert.agree.focus();
+		return false;
+	}
+	
+	if(document.insert.mobileno.value==""){
+		alert("Mobile Number cannot be empty");
+		document.insert.mobileno.focus();
+		return false;
+	}
+	if(document.insert.city.value==""){
+		alert("City Name cannot be empty");
+		document.insert.city.focus();
+		return false;
+	}
+	if(document.insert.state.value==""){
+		alert("State Name cannot be empty");
+		document.insert.state.focus();
+		return false;
+	}
+	if(document.insert.country.value==""){
+		alert("Country Name cannot be empty");
+		document.insert.country.focus();
+		return false;
+	}
+	if(document.insert.companyname.value==""){
+		alert("Country Name cannot be empty");
+		document.insert.companyname.focus();
+		return false;
+	}
+	
+	
+	if(Dospace(document.insert.mobileno.value)||((document.insert.mobileno.value.indexOf(' '))==0))
+	   { alert("Enter valid Mobile Number");
+	   document.insert.mobileno.focus();
+	   return false; }
+	  
+	
+	
+	if(Dospace(document.insert.city.value)||((document.insert.city.value.indexOf(' '))==0))
+	   { alert("Enter valid city");
+	   document.insert.city.focus();
+	   return false; }
+	
+	
+	if(Dospace(document.insert.state.value)||((document.insert.state.value.indexOf(' '))==0))
+	   { alert("Enter valid state");
+	   document.insert.state.focus();
+	   return false; }
+	
+	if(Dospace(document.insert.country.value)||((document.insert.country.value.indexOf(' '))==0))
+	   { alert("Enter valid country");
+	   document.insert.country.focus();
+	   return false; }  
+	
+	    
+	return true;
+}
+
+function init() {
+    // Clear forms here
+    document.getElementById("firstname").value = "";
+    document.getElementById("lastname").value = "";
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("fathername").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("mobileno").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("state").value = "";
+    document.getElementById("country").value = "";
+    document.getElementById("pincode").value = "";
+}
+
+FillCountry(document.insert.country, document.insert.state, 'India' );
+FillState(document.insert.country, document.insert.state, '');
+
+FillCountry(document.insert.country, document.insert.state, 'India' );
+FillState(document.insert.country, document.insert.state, '');
+
+function readImage(file) {
+	  
+    var reader = new FileReader();
+    var image  = new Image();
+  
+    reader.readAsDataURL(file);  
+    reader.onload = function(_file) {
+        image.src    = _file.target.result;              // url.createObjectURL(file);
+        image.onload = function() {
+            var w = this.width,
+                h = this.height,
+                t = file.type,                           // ext only: // file.type.split('/')[1],
+                n = file.name,
+                s = ~~(file.size/1024) +'KB';
+            $('#uploadPreview').append('<img src="'+ this.src +'">  '+n+'<br>');
+        };
+        image.onerror= function() {
+            alert('Invalid file type: '+ file.type);
+        };      
+    };
+    
+}
+
+//-------------function for doublespace validation -----------------------------
+var str="";
+function Dospace(str){
+if(str.indexOf("  ")!=-1)
+{return true;}
+else {return false;}
+}
+
+function myvalidate()
+{
+
+if(document.loginform.textfield.value=="")
+{alert("User Name can't be empty");
+ document.loginform.textfield.focus();
+ return false;}
+ 
+ if(Dospace(document.loginform.textfield.value))
+     { alert("Enter Valid Username");
+       document.loginform.textfield.focus();
+   return false; }
+
+if(document.loginform.textfield2.value=="")
+{alert("Password can't be empty");
+ document.loginform.textfield2.focus();
+ return false;}
+ 
+ if(Dospace(document.loginform.textfield2.value))
+     { alert("Enter Valid Password");
+       document.loginform.textfield2.focus();
+   return false; }
+   
+   
+  
+return true;
+ 
+ }
+ 
+ $(document).ready(function() {
+    $('#submit').click(function(event){
+    
+         
+        if($('.password').val() != $('.cfmpassword').val()) {
+            alert("Password and Confirm Password don't match");
+            // Prevent form submission
+            event.preventDefault();
+        }
+         
+    });
+});
+</script>
+</html>

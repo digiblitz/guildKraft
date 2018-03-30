@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright: 2018 digiBlitz Foundation
+  
+  License: digiBlitz Public License 1.0 (DPL) 
+  Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+  
+  Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+  
+  Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+  
+  "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+ 
+ <!-- General -->
+  <bean name="/login.html" class="com.login.action.KlgLoginAction"/>
+  <bean name="/roles.html" class="com.role.action.KlgRoleAction"/>
+  <bean name="/user.html" class="com.user.action.KlgUserAction"/>
+  <bean name="/logout.html" class="com.logout.action.KlgLogoutAction"/>
+  <bean name="/SearchList.html" class="com.user.action.KlgSearchAction"/>
+  
+  <!-- Ajax -->
+  <bean name="/UsrSignupAjax.html" class="com.user.action.UsrSignupAjaxAction"/>
+  <bean name="/ViewUserList.html" class="com.mrm.action.MemberUserListAction"/>
+  <bean name="/SysMgmt.html" class="com.hpsystinet.action.KlgHpSystinetAction"/>
+  <bean name="/ExterApp.html" class="com.external.action.ExternalApplicationAction"/>
+  <bean name="/artifactMapping.html" class="com.artifact.action.KlgArtifactAction"/>
+  <bean name="/MemberRegiList.html" class="com.membership.action.GldkftMembershipAction"/>
+  <bean name="/memberMaster.html" class="com.membership.action.GldkftMembershipListAction"/>
+  <bean name="/MembershipReg.html" class="com.membership.action.GldkftMembershipRegistrationAction"/>
+  <bean name="/UserRegList.html" class="com.membership.action.GldkftMemberUserListAction"/>
+  <bean name="/insertMembershipReg.html" class="com.membership.action.GldkftMembershipRegInsertAction"/>
+  <bean name="/AdvertisePrice.html" class="com.adv.action.GldkftActionAdvertisePrice"/>
+  <bean name="/advertisement.html" class="com.adv.action.GldkftActionAdvertisement"/>
+  <bean name="/advertiseAdmin.html" class="com.adv.action.GldkftActionAdvertiseAdmin"/>
+  <bean name="/calender.html" class="com.oec.action.calendarAction"/>
+  <bean name="/OECalendar.html" class="com.oec.action.OnlineEntriesCalendarAction"/>
+  <bean name="/entrylist.html" class="com.oec.action.OnlineEntriesListAction"/>
+  <bean name="/OEEValidate.html" class="com.oec.action.OEEValidationAction"/>
+  <bean name="/OEEValidateView.html" class="com.oee.action.OEEValidationViewAction"/>
+  <bean name="/OEEAddPrice.html" class="com.oee.action.AddPriceAction"/>
+  <bean name="/OEEDemo.html" class="com.oee.action.DemographyAction"/>
+  <bean name="/OEEAddTrainer.html" class="com.oee.action.AddTrainerAction"/>
+  <bean name="/ChampLevel.html" class="com.oee.action.OEEMapChampionshipLevel"/>
+  <bean name="/validation.html" class="com.oee.action.EventEntryValidationAction"/>
+  <bean name="/OEEPriceItem.html" class="com.oee.action.PriceItemAction"/>
+  <bean name="/upload.html" class="com.oee.action.UploadResultsAction"/>
+  <bean name="/payment.html" class="com.oee.action.EventEntryPaymentAction"/>
+  <bean name="/paymentConfirm.html" class="com.oee.action.EventEntryPaymentConfirmAction"/>
+  <bean name="/OEEAddFixedPrice.html" class="com.oee.action.AddFixedPriceAction"/>
+  <bean name="/OEMOrgCompReg.html" class="com.oem.action.OrgCompRegListAction"/>
+  <bean name="/ParticipantList.html" class="com.oem.action.ParticipantCompRegListAction"/>
+  <bean name="/OEROrgCompRes.html" class="com.oer.action.OrgCompResultAction"/>
+  <bean name="/ParticipantResult.html" class="com.oer.action.ParticipantCompResultAction"/>
+  <bean name="/orgAndStaffResultList.html" class="com.oer.action.OrgStaffCompResultAction"/>
+  <!--Meetings and events-->
+  <bean name="/eventtype.html" class="com.mee.action.master.ActionEventType"/>
+  <bean name="/actionDivisionEventType.html" class="com.mee.action.master.DivisionEventTypeMasterAction"/>
+  <bean name="/EventOrgRenewal.html" class="com.mee.action.ActionEventOrgRenewal"/>
+  <bean name="/eventRegList.html" class="com.mee.action.EventRegListing"/>
+  <bean name="/OrganizerHLCEventReg.html" class="com.mee.action.OrganizerHLCEventRegAction"/>
+  <bean name="/AnnualRegList.html" class="com.mee.action.AdminAnnualRegListAction"/>
+  <bean name="/addPriceMasterList.html" class="com.mee.action.AddMeePriceDetailMasterAction"/>
+  <bean name="/SetDateMaster.html" class="com.mee.action.AdminSetDateMasterAction"/>
+  <bean name="/actionEventLevel.html" class="com.mee.action.master.EventLevelMasterAction"/>
+  <bean name="/EvntLvlTypeMap.html" class="com.mrm.action.EventLvlTypMapAction"/>
+  <bean name="/meeAjaxPriceMasterList.html" class="com.mee.action.AjaxPriceDetailMaster"/>
+  <bean name="/horseRegExcelData.html" class="com.mee.action.UploadRegDataAction"/>
+  <bean name="/map.html" class="com.mee.action.MemEventLevelMapAction"/>
+  <bean name="/mapValidate.html" class="com.mrm.action.MapValidationAction"/>
+  <bean name="/IcpOrgRegFrm.html" class="com.mee.action.IcpOrgRegAction"/>
+  <bean name="/listAdminOrg.html" class="com.mee.action.AdminOrgListingAction"/>
+  <bean name="/IcpOrgRegList.html" class="com.mee.action.IcpOrgRegListAction"/>
+  <bean name="/recap.html" class="com.mee.action.ActionOrganiserRecap"/>
+  <bean name="/eventRegPriceCRUD.html" class="com.mee.action.EventRegPriceAction"/>
+  <bean name="/meeting.html" class="com.mee.action.ActionMeeting"/>
+  <bean name="/annualConRegAction.html" class="com.mee.action.AnnualConRegAction"/>
+  <bean name="/AnnualAdditionalTckt.html" class="com.mee.action.AnnualAdditionalTckt"/>
+  <bean name="/IcpUsrMeetList.html" class="com.mee.action.UsrMeetListAction"/>
+  <bean name="/IcpUsrList.html" class="com.mee.action.UserIcpListAction"/>
+  <bean name="/horseCompDataMap.html" class="com.mee.action.HorseCompDataMapping"/>
+  <bean name="/eduActivity.html" class="com.mee.action.ActionMadhurai"/>
+  <bean name="/annConRegInsert.html" class="com.mee.action.AnnConRegInsertAction"/>
+  <bean name="/annualAjax.html" class="com.mee.action.AjaxAction"/>
+  <bean name="/RiderInfoAjaxAction.html" class="com.mrm.action.RiderInfoAjaxAction"/>
+  <bean name="/OrganizerUSEAEventReg.html" class="com.mrm.action.OrganizerUSEAEventRegAction"/>
+  <bean name="/SearchHorse.html" class="com.mrm.action.SearchHorseAction"/>
+  
+  <!-- Report -->
+  
+  <bean name="/reportList.html" class="com.report.action.GldkftReportList"/>
+  <bean name="/createGraphByXLS.html" class="com.report.action.GldkftcreateGraphByXLS"/>
+  <bean name="/createSalesGraph.html" class="com.report.action.GldkftcreateSalesGraph"/>
+  <bean name="/humanMemberReport.html" class="com.report.action.GldkfthumanMemberReport"/>
+  <bean name="/horseMemberReport.html" class="com.report.action.GldkfthorseMemberReport"/>
+  <bean name="/MakeChart.html" class="com.report.action.AccTransAction"/>
+  <bean name="/generateReports.html" class="com.report.action.ActionReport"/>
+  <bean name="/HumanMemberReports.html" class="com.report.action.HumanMemberReports"/>
+  <bean name="/DonationReport.html" class="com.report.action.DonationReports"/>
+  <bean name="/HorseMemberReports.html" class="com.report.action.HorseMemberReports"/>
+  <bean name="/eventReportsGeneration.html" class="com.report.action.EventReports"/>
+  <bean name="/salesReport.html" class="com.report.action.SalesReport"/>
+  <bean name="/purchaseRequisitionReport.html" class="com.report.action.PurchaseRequisitionReport"/>
+  
+  
+  
+  <bean name="/showEventReportList.html" class="com.report.action.GldkftshowEventReportList"/>
+  <bean name="/showMemberReportList.html" class="com.report.action.GldkftshowMemberReportList"/>
+  <bean name="/showFinanceReportList.html" class="com.report.action.GldkftshowFinanceReportList"/>
+  <bean name="/eventReport.html" class="com.report.action.GldkfteventReport"/>
+  <bean name="/areaGraph.html" class="com.report.action.GldkftareaGraph"/>
+  <bean name="/memberGraph.html" class="com.report.action.GldkftmemberGraph"/>
+  <bean name="/showReportTypes.html" class="com.report.action.GldkftshowReportTypes"/>
+  <bean name="/salesReportByValue.html" class="com.report.action.GldkftsalesReportByValue"/>
+  <bean name="/salesReportByVolume.html" class="com.report.action.GldkftsalesReportByVolume"/>
+  <bean name="/showSalesReportByValue.html" class="com.report.action.GldkftshowSalesReportByValue"/>
+  <bean name="/showSalesReportByVolume.html" class="com.report.action.GldkftshowSalesReportByVolume"/>
+  <bean name="/purchaseRequition.html" class="com.report.action.GldkftpurchaseRequition"/>
+  <bean name="/showPurchaseRequisitionReport.html" class="com.report.action.GldkftshowPurchaseRequisitionReport"/>
+  <bean name="/showAllReports.html" class="com.report.action.GldkftshowAllReports"/>
+  <bean name="/stockRequirement.html" class="com.report.action.GldkftstockRequirement"/>
+  
+  <bean name="/paypal.html" class="com.paypal.action.PayPalAction"/>
+  <bean name="/signUp.html" class="com.login.action.GldSignUpAction"/>
+  <bean name="/UsrRefundReqListAction.html" class="com.mrm.action.UsrRefundReqListAction"/>
+  <bean name="/RefundReq.html" class="com.mrm.action.RefundReqInsertAction"/>
+  
+  <!-- customer support -->
+  
+  <bean name="/customerSupport.html" class="com.customer.action.CustomersupportAction"/>
+  <bean name="/coupondetails.html" class="com.coupondetails.action.CouponlistAction"/>
+  <bean name="/RefundReqDisp.html" class="com.mrm.action.RefundReqDispAction"/>
+  <bean name="/overPaySection.html" class="com.mrm.action.AdminRefundOverpay"/>
+  <bean name="/AdminRefundStatusDisp.html" class="com.mrm.action.AdminRefundStatusDispAction"/>
+  <bean name="/RefundList.html" class="com.mrm.action.RefundListAction"/>
+  <bean name="/RefundReqApproveAction.html" class="com.mrm.action.RefundReqApproveAction"/>
+  <bean name="/advertise.html" class="com.adv.action.ActionAdvertise"/>
+  <bean name="/advSearch.html" class="com.adv.action.SearchAdvAction"/>
+  
+  <!--bean name="/jbpmProcess.html" class="com.sample.Test"/-->
+
+  <bean name="/eventcal.html" class="com.view.action.Monthcalendar"/>
+  <bean name="//MembershipRenewal.html" class="com.mrm.action.MembershipRenewalAction"/>
+ 	
+ 	 <bean name="/RequestTokenTest.html" class="com.intuit.oauthsample.RequestTokenServletTest"/>
+  <bean name="/AccessTokenTest.html" class="com.intuit.oauthsample.AccessTokenServletTest"/>
+  <bean name="/getcustomer.html" class="com.intuit.oauthsample.GetCustomerServlet"/>
+  <bean name="/ViewChatBox.html" class="com.chat.action.LavlitaChatAction"/>
+  
+  <bean name="/ItemMaster.html" class="com.acc.action.itemMaster.ItemMasterAction"/>
+  <bean name="/TransactDet.html" class="com.acc.action.itemMaster.TransactProcess"/>
+  
+  <bean name="/EndpointPublisher.html" class="com.contactUsers.EndPointPublisher"/>
+  
+  
+  
+  <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+      <property name="prefix" value="/jsp/"/>
+      <property name="suffix" value=".jsp"/>
+  </bean>
+ 
+<!--bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+	<property name="host" value="smtp.gmail.com" />
+	<property name="port" value="587" />
+	<property name="username" value="dhivya.ab@gmail.com" />
+	<property name="password" value="mmbalraaj" />
+ 
+	<property name="javaMailProperties">
+	   <props>
+       	      <prop key="mail.smtp.auth">true</prop>
+       	      <prop key="mail.smtp.starttls.enable">true</prop>
+       	   </props>
+	</property>
+</bean>
+ 
+<bean id="mailMail" class="com.mkyong.common.MailMail">
+	<property name="mailSender" ref="mailSender" />
+</bean-->
+
+</beans>

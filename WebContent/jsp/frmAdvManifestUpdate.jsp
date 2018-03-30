@@ -1,0 +1,259 @@
+<!---
+Copyright: 2018 digiBlitz Foundation
+
+License: digiBlitz Public License 1.0 (DPL) 
+Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+
+Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+
+Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+
+"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+--->
+<!--==============================================IMPORT THE CLASS START HERE============================================-->
+<%@ page import="com.hlccommon.util.*"%>
+<%@ page import="java.sql.*"%>
+<%@ page import="java.util.*"%>
+<%@ page import="java.text.*"%>
+<!--==============================================IMPORT THE CLASS END HERE============================================-->
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><%=(String)session.getAttribute("title")%></title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="js/frmAdvManifest.js" type="text/javascript" ></script>
+<!--==============================================JAVASCRIPT AND CSS LINK START HERE============================================-->
+
+
+<!--==============================================JAVASCRIPT AND CSS LINK END HERE============================================-->
+</head>
+
+
+<body hoe-navigation-type="vertical" hoe-nav-placement="left" theme-layout="wide-layout" theme-bg="bg1">
+
+    <div id="hoeapp-wrapper" class="hoe-hide-lpanel" hoe-device-type="desktop">
+	
+        <!--==============================include header Here=================================-->
+		
+			<%@ include file = "../../include/HeaderProcess.jsp" %>
+			
+		<!--==============================include header Here=================================-->
+
+        <div id="hoeapp-container" hoe-color-type="lpanel-bg2" hoe-lpanel-effect="shrink">
+		
+			<div class="col-md-2 pad">
+		
+		<!--==============================include infobar Here=================================-->
+		
+            <%@ include file = "../../include/infobar.jsp" %>
+			
+		<!--==============================include infobar Here=================================-->
+		</div>
+            <div class="col-md-10">
+			
+                <div class='container'>
+				
+                    <div class='panel panel-primary dialog-panel'>
+					
+					<!--==============================Form Title=================================-->
+                        <div class='panel-heading'>
+                            <h2>Advertisment: Update Advertisement Manifest</h2>
+                        </div>
+					<!--==============================Form Title=================================-->
+						
+                        <div class='panel-body'>
+						
+						<!--==============================Form Description=================================-->
+  		<p>To update the selected 'Applied Issue' advertisement, fill-in the following details and click on the Update button  </p>
+
+	
+		<form class='form-horizontal' role='form' name="frmAdvManifestUpdate" method="post" action="advertiseAdmin.html" onsubmit="return manifestUpdate();" >
+		<input name="advProcess" type="hidden" value="updateConfirm" />
+
+					
+					<%
+						HLCAdsDetailedVO manifestUpdateDetails = (HLCAdsDetailedVO)session.getAttribute("DispUpdateDetails");
+						
+						String adId = manifestUpdateDetails.getAdsId();
+                        String advDetailId = manifestUpdateDetails.getAdvDetailId();
+                        String amount = manifestUpdateDetails.getAmount();
+                        String placementName = manifestUpdateDetails.getPlacement();
+                        String mediaId = manifestUpdateDetails.getMediaId();
+						String mediaName = manifestUpdateDetails.getMediaName();
+                        String dispSubName = manifestUpdateDetails.getDispSubName();
+                        String dimensionId = manifestUpdateDetails.getDimId();
+						String advMapId = manifestUpdateDetails.getMapId();
+                        String dispName = manifestUpdateDetails.getDispName();
+                        String dimensionName = manifestUpdateDetails.getDimName();
+						String issueId =  manifestUpdateDetails.getIssueId();
+                        String issueName = manifestUpdateDetails.getIssueName();
+		                                 
+				  %>
+				
+				  <p>Required fields are marked with an asterisk<span style="color:#FF0000">*</span>
+				 
+				 
+				 		 <div class='form-group'>
+                              <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Advertisement Type:</label>
+                                    <div class='col-md-8'>
+                                        <div class='col-md-3 indent-small'>
+                                            <div class='form-group internal'>
+													<label class='control-label'><%=dispName%></label>
+											</div>
+										</div>
+									</div>
+							
+							<label class='control-label col-md-2 col-md-offset-2' for='id_title'>Advertisement Sub-Type:</label>
+                                    <div class='col-md-8'>
+                                        <div class='col-md-3 indent-small'>
+                                            <div class='form-group internal'>
+														<label class='control-label'><%=dispSubName%></label>
+											</div>
+										</div>
+									</div>
+						 
+				 		  <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Issue Type:</label>
+									<div class='col-md-8'>
+                                        <div class='col-md-3 indent-small'>
+                                            <div class='form-group internal'>
+					
+											 <select name="selIssue" id="chkIssueId" class="form-control">
+											  <option value="">Select One</option>
+											 <%
+											Vector issueDet = (Vector)session.getAttribute("DisplayIssueDetails");
+											if(issueDet!=null && issueDet.size()!=0){
+													Enumeration eIssueLst1 =issueDet.elements();
+													while(eIssueLst1.hasMoreElements()){
+														String[] sIss = (String [])eIssueLst1.nextElement();
+														String issue_id=sIss[0];
+														String issue_name1=sIss[1];
+														String media_id1=sIss[2];
+														
+											   if(issue_id.equals(issueId)){
+												%>
+												<option value="<%=issue_id%>" selected="selected"><%=issue_name1%></option>
+												<%
+												}
+												else{
+												%>
+											<option value="<%=issue_id%>"><%=issue_name1%></option>
+												<%		
+												}
+												}
+												}%>
+										 </select>
+ 												 <span id='span_astriesk'>*</span>
+											</div>
+										</div>
+									</div>
+									
+							<label class='control-label col-md-2 col-md-offset-2' for='id_title'>Advertisement Dimension:</label>
+                                    <div class='col-md-8'>
+                                        <div class='col-md-3 indent-small'>
+                                            <div class='form-group internal'>
+											 <select name="selDimension" id="selWinDimchkIssue" class="form-control" >
+											 <option value="">Select One</option>
+												<%
+													Vector dimDetails = (Vector)session.getAttribute("DisplayDimensionDetails");
+													if(dimDetails!=null && dimDetails.size()!=0){
+														Enumeration eDimLst = dimDetails.elements();
+														String dimListId = "";
+														String dimListName = "";
+															while(eDimLst.hasMoreElements()){
+															String[] s = (String [])eDimLst.nextElement();
+															dimListId = s[0];
+															dimListName = s[1];
+															if(dimListId.equals(dimensionId)){
+																%>
+																<option value="<%=dimListId%>" selected="selected"><%=dimListName%></option>
+																<%}
+																else{
+																%>
+															<option value="<%=dimListId%>"><%=dimListName%></option>
+												<%		
+												}
+												}
+												}%>
+										 </select>
+													 <span id='span_astriesk'>*</span>
+											</div>
+										</div>
+									</div>
+									
+							<label class='control-label col-md-2 col-md-offset-2' for='id_title'>Published Page No.:</label>
+                                    <div class='col-md-8'>
+                                        <div class='col-md-3 indent-small'>
+                                            <div class='form-group internal'>
+														<input type="text"  name="pageno" id="txtPage" class="form-control" />
+														<span id='span_astriesk'>*</span>
+											</div>
+										</div>
+									</div>
+									
+							<label class='control-label col-md-2 col-md-offset-2' for='id_title'>Special Placements:</label>
+                                    <div class='col-md-8'>
+                                        <div class='col-md-3 indent-small'>
+                                            <div class='form-group internal'>
+														<input type="text"  name="placement" id="txtSpecial"  class="form-control"   />
+														<span id='span_astriesk'>*</span>
+											</div>
+										</div>
+									</div>
+									
+						  <label class='control-label col-md-2 col-md-offset-2' for='id_title'>Special Instructions:</label>
+                                    <div class='col-md-8'>
+                                        <div class='col-md-3 indent-small'>
+                                            <div class='form-group internal'>
+													<textarea name="SpecialInstructions" id="txtSpInstructions" class="form-control" rows="5" cols="27"></textarea>
+													<span id='span_astriesk'>*</span>
+											</div>
+										</div>
+									</div>
+								</div>
+				
+				    <input type="hidden" name="adId" value="<%=adId%>" />
+				   <input type="hidden" name="advMapId" value="<%=advMapId%>" />
+				   <input type="hidden" name="advDetailId" value="<%=advDetailId%>" />
+				   
+				  			 <div class='form-group'>
+                                    <div class='col-md-offset-4 col-md-1'>
+                                        <button class='btn-lg btn-primary' name="Submit" type="submit"  value="Create">Create</button>
+                                    </div>
+                                    <div class='col-md-2'>
+                                       <button class='btn-lg btn-danger'name="button" type="button"  value="Cancel" onclick="javascript:history.back(-1);" style=''>Cancel</button>
+                                    </div>
+                                </div>
+						</form>
+							<!--==============================Form Body=================================-->
+							
+                        </div>
+						
+                    </div>
+					
+                </div>
+				
+            </div>
+			
+			<!--==============================include chat Here=================================-->
+			
+				<%@ include file = "../../include/chat_new.jsp" %>
+				
+			<!--==============================include chat Here=================================-->
+
+        </div>
+		
+    </div>
+	
+			<!--==============================include chat Here=================================-->
+			
+				<%@ include file = "../../include/FooterProcess.jsp" %>
+				
+			<!--==============================include chat Here=================================-->
+			
+</body>
+
+</html>

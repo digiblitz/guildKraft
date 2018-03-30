@@ -1,0 +1,63 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+.chatInput{
+	border:1px solid #5AB3FC;
+	background-color: #FFFFF;
+	color: #000000;
+	font-weight: normal;
+	padding-left: 2px;
+	height: 27px;
+	width: 245px;
+}
+.fromUserName {
+	color: #000000;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;	
+}
+.fromMessage {
+    color: #FF0000;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.toUserName {
+	color: #000000;
+	font-family: sans-serif;
+	font-size: 18px; 
+	font-weight: bold;
+}
+
+.toMessage {
+    color: #FF0000;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.windowTitle {
+	color: #FFFFFF;
+	font-family: verdana;
+	font-size: 12px; 
+	font-weight: bold;
+	float: left;
+	position: relative;
+	top: 5px;
+}
+.windowClose {
+	color: #FFFFFF;
+	font-family: verdana;
+	font-size: 14px; 
+	float: right;
+	position: relative;
+	top: 5px;
+	cursor: pointer;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+   
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+
+<header id="header">
+    <%@ include file = "../../include/Header_temp.jsp" %>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+
+<%String firstname=(String)request.getAttribute("firstname"); %>
+<%String lastname=(String)request.getAttribute("lastname"); %>
+<%String e_mail=(String)request.getAttribute("e_mail"); %>
+<%String companyname=(String)request.getAttribute("companyname"); %>
+<%String cmid=(String)request.getAttribute("cmid"); %>
+<section id="content">
+
+    <div class="bg-content_2">
+        <div class="border-bottom border-bottom_2">
+            <div class="container">
+                <div class="wrapper13">
+                    <div class="row">
+                      <div class="grid_12">
+                            <h3 class="heading_8 color_3 text_4">Congrats &nbsp;firstname<!--%=firstname %--> !</h3>
+							<p class="text_9 color_2">You're ready to start using SmartLehren Online Edition</p>
+							<p class="text_8 color_6">We'll send you a welcome email shortly with some quick tips to get started easily.</p>
+
+                            <div class="row">
+                        <div class="grid_6">
+                            
+                            <div class="box6">
+                            <h5 class="text_11 color_3 line">
+                                <a href="#">Login Details</a>                            </h5>
+								<p class="text_9 color_2">firstname<!--%=firstname %-->&nbsp;lastname<!--%=lastname %--><br>
+								e_mail<!--%=e_mail %-->
+								</p>
+								<div class="contact-box">
+                                <p class="heading color_3 text_2">Institution Information</p>
+								<p class="text_8 color_5">Company Name: digiBlitz<!--%=companyname %--><br>
+								Company ID: DIGI1<!--%=cmid %-->
+								</p>
+								
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="grid_6">
+                         
+                            <div class="box6">
+                             <div class="clearfix">&nbsp;</div>
+							 <div class="clearfix">&nbsp;</div>
+							 <div class="clearfix">&nbsp;</div>
+							  <div class="clearfix">&nbsp;</div>
+							 <div class="clearfix">&nbsp;</div>
+							 <div class="clearfix">&nbsp;</div>
+							  <div class="clearfix">&nbsp;</div>
+							 <div class="clearfix">&nbsp;</div>
+							 <div class="clearfix">&nbsp;</div>
+                            <div class="contact-box"><a class="btn color_3 text_3" href="#">guildKraft Online ><br>Rs 8999.00*/year</a></div>
+                        </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+					<div class="row">
+        <div class="grid_12" align="center">
+             <div class="contact-box"><a class="btn color_3 text_3" href="#">Get Start</a></div>
+
+           
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="grid_12">
+                    <h1 class="text_4 color_1">
+                        <a href="index.jsp">guildKraft</a>
+                    </h1>
+                    <p class="copyright color_9 text_2">
+                        <span>&copy;
+                            <span id="copyright-year"></span></span>
+                        <a href="index-6.jsp">Privacy policy</a>
+                        More <a rel="nofollow" href="http://www.digiblitz.com/" target="_blank">digiBlitz Technologies Pvt Ltd.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+   
+
+
+</html>

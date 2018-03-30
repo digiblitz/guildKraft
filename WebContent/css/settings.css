@@ -1,0 +1,265 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+.biss-settings {
+	position: fixed;
+	top: 100px;
+	left: -240px;
+	z-index: 10100;
+	padding-right: 40px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 280px;
+}
+.biss-settings > .inner {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	width: 100%;
+	text-align: left;
+	padding: 15px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.biss-settings > .inner.shadow {
+	box-shadow: rgba(000,000,000,0.4) 0px 0px 10px;
+}
+.biss-settings > .inner > i.fa-cog {
+	position: absolute;
+	background-color: #fff;
+	color: #333;
+	font-size: 24px;
+	line-height: 40px;
+	width: 40px;
+	text-align: center;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	border: 1px solid #e5e5e5;
+	border-left-width: 0px;
+}
+.biss-settings > .inner h3 {
+	color: #333;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 100%;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border: 0px solid #e5e5e5;
+	border-bottom-width: 1px;
+}
+.biss-settings > .inner ul, .biss-settings > .inner ul li {
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+.biss-settings > .inner ul {
+	display: inline-block;
+}
+.biss-settings > .inner ul.skin li {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background-color: #e5e5e5;
+	margin-bottom: 9px;
+	margin-right: 9px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.biss-settings > .inner ul.skin li span {
+	width: 50%;
+	float: left;
+	height: 100%;
+}
+/*
+	Color #1
+*/
+.biss-settings > .inner ul.skin li.s1 span.c1 {
+	background-color: #ce434a;
+}
+.biss-settings > .inner ul.skin li.s1 span.c2 {
+	background-color: #373d4b;
+}
+
+/*
+	Color #2
+*/
+.biss-settings > .inner ul.skin li.s2 span.c1 {
+	background-color: #90ada9;
+}
+.biss-settings > .inner ul.skin li.s2 span.c2 {
+	background-color: #2c150f;
+}
+
+/*
+	Color #3
+*/
+.biss-settings > .inner ul.skin li.s3 span.c1 {
+	background-color: #73c026;
+}
+.biss-settings > .inner ul.skin li.s3 span.c2 {
+	background-color: #2e2d26;
+}
+
+/*
+	Color #4
+*/
+.biss-settings > .inner ul.skin li.s4 span.c1 {
+	background-color: #e8bb48;
+}
+.biss-settings > .inner ul.skin li.s4 span.c2 {
+	background-color: #292421;
+}
+
+/*
+	Color #5
+*/
+.biss-settings > .inner ul.skin li.s5 span.c1 {
+	background-color: #d6a5bb;
+}
+.biss-settings > .inner ul.skin li.s5 span.c2 {
+	background-color: #44324d;
+}
+
+/*
+	Color #6
+*/
+.biss-settings > .inner ul.skin li.s6 span.c1 {
+	background-color: #a6c7ac;
+}
+.biss-settings > .inner ul.skin li.s6 span.c2 {
+	background-color: #016f86;
+}
+
+/*
+	Color #7
+*/
+.biss-settings > .inner ul.skin li.s7 span.c1 {
+	background-color: #806b66;
+}
+.biss-settings > .inner ul.skin li.s7 span.c2 {
+	background-color: #2b2a33;
+}
+
+/*
+	Color #8
+*/
+.biss-settings > .inner ul.skin li.s8 span.c1 {
+	background-color: #e3823d;
+}
+.biss-settings > .inner ul.skin li.s8 span.c2 {
+	background-color: #787777;
+}
+
+/*
+	Pattern #1
+*/
+.p1 {
+	background-image: url(../img/bg-patterns/pat01.png);
+}
+/*
+	Pattern #2
+*/
+.p2 {
+	background-image: url(../img/bg-patterns/pat02.png);
+}
+/*
+	Pattern #3
+*/
+.p3 {
+	background-image: url(../img/bg-patterns/pat03.png);
+}
+/*
+	Pattern #4
+*/
+.p4 {
+	background-image: url(../img/bg-patterns/pat04.png);
+}
+/*
+	Pattern #5
+*/
+.p5 {
+	background-image: url(../img/bg-patterns/pat05.png);
+}
+/*
+	Pattern #6
+*/
+.p6 {
+	background-image: url(../img/bg-patterns/pat06.png);
+}
+/*
+	Pattern #7
+*/
+.p7 {
+	background-image: url(../img/bg-patterns/pat07.png);
+}
+/*
+	Pattern #8
+*/
+.p8 {
+	background-image: url(../img/bg-patterns/pat08.png);
+}
+/*
+	Image #1
+*/
+.i1 {
+	background-image: url(../img/bg-images-2/1.jpg);
+}
+/*
+	Image #2
+*/
+.i2 {
+	background-image: url(../img/bg-images-2/2.jpg);
+}
+/*
+	Image #3
+*/
+.i3 {
+	background-image: url(../img/bg-images-2/3.jpg);
+}
+/*
+	Image #4
+*/
+.i4 {
+	background-image: url(../img/bg-images-2/4.jpg);
+}
+/*
+	Image #5
+*/
+.i5 {
+	background-image: url(../img/bg-images-2/5.jpg);
+}
+/*
+	Image #6
+*/
+.i6 {
+	background-image: url(../img/bg-images-2/6.jpg);
+}
+/*
+	Image #7
+*/
+.i7 {
+	background-image: url(../img/bg-images-2/7.jpg);
+}
+/*
+	Image #8
+*/
+.i8 {
+	background-image: url(../img/bg-images-2/8.jpg);
+}
+
+.biss-settings ul [class*="i"] {
+	background-size: cover;
+}

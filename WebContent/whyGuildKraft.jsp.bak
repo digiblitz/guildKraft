@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+   
+</head>
+
+<body>
+
+<!--========================================================
+                          HEADER
+=========================================================-->
+
+<header id="header">
+    <%@ include file = "../../include/Header_temp.jsp" %>
+</header>
+<!--========================================================
+                          CONTENT
+						  
+=========================================================-->
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content">
+
+
+<div class="bg-content">
+    <div class="border-bottom border-bottom_2">
+        <div class="container">
+            <div class="wrapper3">
+                <div class="row">
+                    <div class="grid_12">
+                        <h3 class="heading_1 text_4 color_2" align="center">&ldquo;While our customers manage their day-day association activities,
+guildKraftsystematicallyhandles their member relationships, and executes marketing & event activitiesthrough effective process management&rdquo;
+</h3>
+                    </div>
+					
+					<div class="grid_12">
+							<p class="color_6 text_8" style="font-weight:bold">
+					Whether your association has few hundred or few thousand members and employees, guildKraft is a highly scalable centralized association process automation system with Business Process Management (BPM) and Service Orientation capabilities bundled under one umbrella.
+                           </p>
+						   <p class="color_6 text_8" style="font-weight:bold">
+					WAnd, the best part is not bringing any of the complexities associated with BPM/SOA to the user.
+                           </p>
+						   <p class="color_6 text_8" style="font-weight:bold">
+					The system shall be configured to handle your process - driven by both Forms (Business Objects) and Events. guildKraft is a 4G Associations management system that works on events and process driven approach than just activities.
+                           </p>
+					</div>
+					
+					<div class="grid_12">
+                         <h5 class="text_11 color_3 line">
+						Customer Testimony:
+						</h3>
+						 <p class="text_8 color_5">
+						 &ldquo;US Eventing was in need of a web-based membership management system that interfaced with QuickBooks, and digiBlitz's Association Dashboard application met the requirement...- managing both human and horse memberships, online event registration for 250 competitions annually. digiBlitz has always provided professional, knowledgeable and flexible services&rdquo;
+						 </p>
+						 <p class="text_8 color_5" style="font-weight:bold">-Robert Winter, IT Director - US Eventing Association</p>
+                    </div>
+					 <div class="grid_12">
+                    <h3 class="heading_2 text_4 color_3">What’s powering guildKraft?</h3>
+                </div>
+					
+					
+                </div>
+                <div class="row">
+                    <div class="grid_4">
+                        <div class="box6">
+                            <h5 class="text_11 color_3 line">
+                                <a href="#">Enterprise Dashboard: </a>                            </h5>
+                            <p class="text_8 color_5">
+							Can you imagine having all your applications finally getting together to work for you and your schedule and needs? This product has a powerful underlying Engine that integrates all you applications and brings centralized manageability.
+							</p>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box6">
+                            <h5 class="text_11 color_3 line">
+                                <a href="#">Systematic events: </a>                            </h5>
+                            <p class="text_8 color_5">
+							guildKraft helps you promote the Association and make people to sign up as your patrons through effective campaigns. It facilitates you in smartly conducting various events to retain and increase your membership subscriptions.
+							</p>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box6">
+                            <h5 class="text_11 color_3 line">
+                                <a href="#">Single Sign-On: </a>                            </h5>
+                            <p class="text_8 color_5">
+							One stop login portal for all the users and the system will align itself based on the role.
+							 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid_4">
+                        <div class="box6">
+                            <h5 class="text_11 color_3 line">
+                                <a href="#">Maximise productivity: </a>                            </h5>
+                            <p class="text_8 color_5">
+							Trouble with third party applications? We bring seamless and hassle free connectivity with external applications like QuickBooks, ACT, Salesforce, etc.
+							</p>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box6">
+                            <h5 class="text_11 color_3 line">
+                                <a href="#">E-commerce: </a>                            </h5>
+                            <p class="text_8 color_5">
+							Sell more products with many categories through better online store front which can hold tones of products under hundreds of categories.
+							</p>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box6">
+                            <h5 class="text_11 color_3 line">
+                                <a href="#">Cloud:</a>                            </h5>
+                            <p class="text_8 color_5">
+							The system is 100% web based with an option of implementing in private or public cloud. It’s a complete secured environment for your organizational process and applications. No more worries and nightmares on security.
+							</p>
+                        </div>
+                    </div>
+                </div>
+				
+				<div class="row">
+                        <div class="grid_6">
+                            <h3 class="heading_4 color_3 text_4">Web-based hosted solution Self Service:</h3>
+                            
+                            
+                            
+                            <p class="mail text_8 color_6">
+							&diams;&nbsp;Unlimited Events Management Automation.<br>
+							&diams;&nbsp;Membership Management Automation.<br>
+							&diams;&nbsp;Social Media communications Automation.<br>
+							&diams;&nbsp;Campaign Management Automation.<br>
+							&diams;&nbsp;Handle Human & Non-Human Members in One System<br>
+							&diams;&nbsp;Single-Sign-On Centralized Web Control<br>
+							&diams;&nbsp;Customer Relationship Management(CRM) components.<br>
+							&diams;&nbsp;Enterprise Resource Planning(ERP) components.<br>
+							&diams;&nbsp;Hassle Free Integration with Any Technology Components and/or Systems (CRM, ERP etc.)<br>
+							&diams;&nbsp;Integration with Industry Standard Accounting Tools (QuickBooks, SAP, Oracle etc.)<br>
+							&diams;&nbsp;Create and manage Business Process using BPM technology<br>
+							&diams;&nbsp;Extensive Business Intelligence Reports
+                            </p>
+                        </div>
+                        <div class="grid_6">
+                            <h3 class="heading_4 color_3 text_4">Fully Managed Service model:</h3>
+                            
+                            
+                            
+                            <p class="mail text_8 color_6">
+							&diams;&nbsp;All of guildKraft, Self Service components<br>
+							&diams;&nbsp;Membership Business process Management as per your organizational models/business architecture<br>
+							&diams;&nbsp;Live Membership Process Support (Shared executive to handle your members’ calls)<br>
+							&diams;&nbsp;Accounts and finance business process management as per your organizational models/business architecture<br>
+							&diams;&nbsp;Order Business Process management as per your organizational model, store, products, inventory, supply chain etc.<br>
+							&diams;&nbsp;Custom Social Media Communication as per your organizational model and architecture<br>
+							&diams;&nbsp;Live Customer Service Support (Shared executives to handle your order management calls)
+
+                            </p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <div class="grid_12">
+                    <h1 class="text_4 color_1">
+                        <a href="http://www.digiblitz.com/" target="_blank">digiblitz</a>
+                    </h1>
+                    <p class="copyright color_9 text_2">
+                        <span>&copy;
+                            <span id="copyright-year"></span></span>
+                        <a href="#">Privacy policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

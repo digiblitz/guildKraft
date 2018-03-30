@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright: 2018 digiBlitz Foundation
+  
+  License: digiBlitz Public License 1.0 (DPL) 
+  Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+  
+  Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+  
+  Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+  
+  "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+-->
+<font>
+	<font-aliases>
+		<mapping name="serif" font-family="Lucida Bright" />
+		<mapping name="sans serif" font-family="Lucida Sans" />
+		<mapping name="monospace" font-family="Lucida Sans Typewriter" />
+		<mapping name="cursive" font-family="Lucida Sans Typewriter" />
+		<mapping name="fantasy" font-family="Lucida Sans Typewriter" />
+	</font-aliases>
+	<composite-font name="all-fonts" default="Lucida Sans Typewriter">
+		<font font-family="Lucida Sans Typewriter" catalog="Western" />
+		<font font-family="ZYSong18030" catalog="Chinese" />
+		<font font-family="Baekmuk Batang" catalog="Korean" />
+		<font font-family="Kochi Mincho" catalog="Japanese" />
+	</composite-font>
+</font>

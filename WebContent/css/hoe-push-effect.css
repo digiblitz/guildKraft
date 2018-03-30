@@ -1,0 +1,54 @@
+#-------------------------------------------------------------------------------
+# Copyright: 2018 digiBlitz Foundation
+# 
+# License: digiBlitz Public License 1.0 (DPL) 
+# Administered by digiBlitz Foundation. www.digiblitz.org/dpl/
+# 
+# Inventor: Suresh Kannan (Maya Suresh Kannan Balabisegan ) (www.sureshkannan.org)
+# 
+# Authors: Suresh Kannan (Maya Suresh Kannan Balabisegan )& digiBlitz.
+# 
+# "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software in accordance to the rules & restrictions of the digiBlitz Public License."
+#-------------------------------------------------------------------------------
+/*################ Theme Header With Content Push Effect Start #####################*/
+#hoe-header[hoe-lpanel-effect="push"] .hoe-right-header[hoe-position-type="fixed"] {
+    margin-left: 230px;
+    margin-right: -230px;
+	padding-right:0px
+}
+#hoe-header.hoe-minimized-lpanel[hoe-lpanel-effect="push"] .hoe-right-header[hoe-position-type="fixed"] {
+     margin-left: 50px;
+	margin-right: 0px;
+	padding-right:50px
+}
+#hoe-header[hoe-lpanel-effect="push"] .hoe-right-header[hoe-position-type="relative"] {
+    margin-left: 230px;
+    margin-right: -230px;
+}
+#hoe-header[hoe-lpanel-effect="push"].hoe-minimized-lpanel .hoe-right-header[hoe-position-type="relative"] {
+    margin-left: 50px;
+	margin-right: 0px;
+}
+#hoe-header[hoe-lpanel-effect="push"] .hoe-right-header[hoe-position-type="relative"] .hoe-sidebar-toggle a:after {
+ margin-left:  0px;
+}
+#hoe-header.hoe-minimized-lpanel[hoe-lpanel-effect="push"] .hoe-right-header[hoe-position-type="relative"] .hoe-sidebar-toggle a:after {
+ margin-left:  0px;
+}
+#hoe-header[hoe-lpanel-effect="push"] .hoe-right-header[hoe-position-type="fixed"] .hoe-sidebar-toggle a:after {
+    margin-left:  0px;
+}
+#hoe-header.hoe-minimized-lpanel[hoe-lpanel-effect="push"] .hoe-right-header[hoe-position-type="fixed"] .hoe-sidebar-toggle a:after {
+    margin-left:  0px;
+}
+
+#hoeapp-container[hoe-lpanel-effect="push"] #main-content{
+	margin-left: 230px;
+	margin-right: -230px;
+}
+#hoeapp-container[hoe-lpanel-effect="push"].hoe-minimized-lpanel #main-content{
+	 margin-left: 50px;
+     margin-right: 0px;	 
+}
+
+/*################ Theme Header With Content Push Effect Close #####################*/
